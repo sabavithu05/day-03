@@ -1,0 +1,15 @@
+body {
+
+        background-color: blue;
+        font-Size: 20px;
+        font-Weight: bold;
+        text-Align: center;
+        font-family: Arial;
+}
+
+div {
+        background-color: lightgray;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 20px;
+}

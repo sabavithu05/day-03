@@ -9,9 +9,21 @@ function ReactList() {
     { id: 3, name: 'geeks', age: '35' }
     ];
 
+    const COMPANY = ["greeks", "for", "geeks"];
+    const handleClick = (COMPANY) => {
+        alert(`You clicked on ${COMPANY}`); };
+
+        const myStyle = {
+            color: 'blue',
+            fontSize: '20px',
+            fontWeight: 'bold',
+            textAlign: 'center',};
+    
+    
+    
     return ( <div>
 
-        <h1> Fruit List </h1>
+        <h1 style={myStyle}> Fruit List </h1>
 
         <ul> {fruit.map((f, index) => (
             <li key={index}>{f}</li>))} 
@@ -28,8 +40,12 @@ function ReactList() {
 
         <ul> {user.map ((user)=> (user.age> 54 ? ( <li key={user.id}>{user.name}   senior  </li>):
         (
-             <li key={user.id}>{user.name}   junior  </li>  ) ))} </ul>                                      
-    
-        </div>
+             <li key={user.id}>{user.name}   junior  </li>  ) ))} </ul>      
+        
+            
+    <ul> {COMPANY.map((COMPANY,index) => ( <button key={index} onClick={() => handleClick(COMPANY)}>{COMPANY}</button>))} </ul>
+
+    </div>
     );
+
 }; export default ReactList;                 

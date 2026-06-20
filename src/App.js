@@ -1,5 +1,6 @@
 import React from 'react';
 import themeimg from './themeimg.jpg';
+import formstyle from './module/form.module.css';
 
 function App() {
   const message = 'Hello, React!!!';
@@ -23,8 +24,8 @@ function App() {
 
   return (
 
-    <div>
-      <welcome> Welcome to React!
+    <div className={formstyle.bigred}>
+      <Welcome> Welcome to React!
         <ul>
           <li><a href="default.asp">Home</a></li>
           <li><a href="news.asp">News</a></li>
@@ -32,9 +33,9 @@ function App() {
           <li><a href="about.asp">About</a></li>
         </ul>
 
-      </welcome>
+      </Welcome>
       <h1> {message} </h1>
-      <hi>Hello {name}</hi>
+      <h1>Hello {name}</h1>
       <p> {paragraph} </p>
       <p> {description} </p>
       {theme}

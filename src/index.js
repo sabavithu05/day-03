@@ -7,6 +7,8 @@ import Bio from './Bio';
 import UpdatePage from './UpdatePage';
 import Count from './Count';
 import ReactList from './ReactList';
+import './mystyle.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
